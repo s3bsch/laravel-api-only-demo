@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "s3huber/laravel-api-only-demo",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Laravel API only demo application.",
+    "keywords": ["api", "php", "laravel"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
