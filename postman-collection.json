@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "4633b620-f984-4b54-9ca6-f8007bbde498",
+		"name": "Laravel API Only Demo",
+		"description": "Collection of requests related to the [s3huber/laravel-api-only-demo](https://github.com/s3huber/laravel-api-only-demo) application.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/api/user",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show CSRF Cookie",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/sanctum/csrf-cookie",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sanctum",
+						"csrf-cookie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
