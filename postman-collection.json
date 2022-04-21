@@ -18,12 +18,11 @@
 					}
 				],
 				"url": {
-					"raw": "localhost/api/user",
+					"raw": "localhost/user",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"api",
 						"user"
 					]
 				}
