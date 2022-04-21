@@ -17,7 +17,8 @@ After reading this
  the idea for this project was born.
 
 The goal is to get more familiar with bootstrapping a Laravel application in general.
- How does the default authentication mechanism work? How about Sanctum?
+ How does the default authentication mechanism work?
+ [How about Sanctum?](https://github.com/s3huber/laravel-api-only-demo/issues/8)
  And most importantly, how hard is it to handle a request of an already authenticated user without 
  accessing the database (at least not for authentication).
 
