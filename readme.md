@@ -4,7 +4,7 @@ A [Laravel](https://laravel.com) demo application which is modified to serve an 
 
 The necessary steps are well documented by
  [commits](https://github.com/s3huber/laravel-api-only-demo/commits/main) and
- [issues](https://github.com/s3huber/laravel-api-only-demo/issues).
+ [issues](https://github.com/s3huber/laravel-api-only-demo/issues?q=is%3Aissue).
 
 ## Why
 
