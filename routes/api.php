@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StatusController;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,10 @@ Route::get('', function () {
         'documentation' => Config::get('app.documentation'),
         'environment' => Config::get('app.env'),
     ]);
-});
+})->name('info');
+
+Route::get('status', [StatusController::class, 'show'])
+    ->name('status.show');
 
 Route::middleware('auth:sanctum')
     ->group(function () {

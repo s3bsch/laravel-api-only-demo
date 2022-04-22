@@ -97,6 +97,102 @@
 			]
 		},
 		{
+			"name": "Show Status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/status",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 – All good",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}/status",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 13:29:08 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 13:29:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"database\": true,\n    \"cache\": true\n}"
+				}
+			]
+		},
+		{
 			"name": "Show User",
 			"request": {
 				"method": "GET",
