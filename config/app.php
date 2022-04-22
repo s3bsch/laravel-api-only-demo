@@ -17,6 +17,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    // TODO #11 Add documentation config.
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
