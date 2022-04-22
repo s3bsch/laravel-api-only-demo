@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 
-class ShowInfoEndpointTest extends TestCase
+class ShowInfoTest extends TestCase
 {
     function test_it_returns_basic_info()
     {
