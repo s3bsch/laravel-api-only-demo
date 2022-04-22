@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Response;
 use Throwable;
 
-class StatusController extends Controller
+class StatusController extends BaseController
 {
     public function show(): JsonResponse
     {
