@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Carbon\Carbon;
+use Database\Factories\UserAddressFactory;
 use Database\Factories\UserFactory;
 use Database\Factories\UserProfileFactory;
 use Illuminate\Database\Seeder;
@@ -26,9 +27,14 @@ class DemoUserSeeder extends Seeder
         $profile->last_name = 'User1';
         $profile->birthday = Carbon::parse('2001-01-01');
 
-        UserFactory::new()
+        $user = UserFactory::new()
             ->withProfile($profile)
             ->create(['email' => 'user1@demo']);
+
+        UserAddressFactory::new()
+            ->forUser($user)
+            ->count(2)
+            ->create(['comment' => 'Comment from Demo User1.']);
     }
 
     /*
@@ -41,9 +47,13 @@ class DemoUserSeeder extends Seeder
         $profile->last_name = 'User2';
         $profile->birthday = Carbon::parse('2002-01-01');
 
-        UserFactory::new()
+        $user = UserFactory::new()
             ->withProfile($profile)
             ->create(['email' => 'user2@demo']);
+
+        UserAddressFactory::new()
+            ->forUser($user)
+            ->create();
     }
 
     /*
