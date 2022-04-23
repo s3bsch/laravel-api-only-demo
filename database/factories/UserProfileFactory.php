@@ -27,8 +27,9 @@ class UserProfileFactory extends Factory
     public function forUser(User $user): self
     {
         return $this->state(['user_id' => $user->id])
-            ->afterMaking(function ($profile) use ($user) {
-                $profile->setRelation('user', $user);
+            ->afterMaking(function (UserProfile $profile) use ($user) {
+                $profile->user()
+                    ->associate($user);
             });
     }
 }
