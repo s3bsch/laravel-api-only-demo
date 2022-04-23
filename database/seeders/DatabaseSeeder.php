@@ -5,15 +5,21 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+/**
+ * Default database seeder.
+ *
+ * This seeder is run by the following artisan commands:
+ *  - `php artisan db:seed`
+ *  - `php artisan migrate:fresh --seed`
+ */
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run()
+    use WithoutModelEvents;
+
+    public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            DemoUserSeeder::class,
+        ]);
     }
 }
