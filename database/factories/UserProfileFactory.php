@@ -9,6 +9,13 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /** @extends Factory<UserProfile> */
 class UserProfileFactory extends Factory
 {
+    protected $model = UserProfile::class;
+
+    public static function empty(): UserProfile
+    {
+        return new UserProfile();
+    }
+
     public function definition(): array
     {
         return [
